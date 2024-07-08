@@ -41,6 +41,7 @@ public class Apache_POI {
 		driver.findElement(By.name("btnLogin")).click();
 	    Thread.sleep(2000);
 	    Alert a = driver.switchTo().alert();
+	   
 	    a.accept();
 	
 	    fis.close();

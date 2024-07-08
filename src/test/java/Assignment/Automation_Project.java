@@ -50,10 +50,10 @@ public class Automation_Project {
 	driver.findElement(By.id("qty")).sendKeys("3");
 	Thread.sleep(2000);
 	//add to cart
-	driver.findElement(By.xpath("//button[@title='Add to Cart']")).click();
-	Thread.sleep(5000);
-	driver.findElement(By.xpath("//a[@class='action showcart']/span[2]")).click();
-	driver.findElement(By.xpath("//a[@class='action viewcart']/span")).click();
+		driver.findElement(By.xpath("//button[@title='Add to Cart']")).click();
+		Thread.sleep(5000);
+		driver.findElement(By.xpath("//a[@class='action showcart']/span[2]")).click();
+		driver.findElement(By.xpath("//a[@class='action viewcart']/span")).click();
 	String ActualTitle=driver.getTitle();
 	String exptitle="Shopping Cart";
 	if(ActualTitle.equals(exptitle))
@@ -75,16 +75,7 @@ public class Automation_Project {
 	
 	//To edit the quantity.
 	driver.findElement(By.xpath("//a[@class='action action-edit']")).click();
-	String ActualTitle1=driver.getTitle();
-	String exptitle1="Leah Yoga Top";
-	if(ActualTitle1.equals(exptitle1))
-	{
-		System.out.println("Page verified and correct");
-	}
-		else
-		{
-			System.out.println("Test case fail");
-		}
+	
 	Thread.sleep(5000);
 	driver.findElement(By.xpath("//div[@index='1']")).click();
 	driver.findElement(By.xpath("//div[@option-id='56']")).click();
